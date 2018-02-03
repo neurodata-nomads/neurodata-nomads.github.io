@@ -18,9 +18,9 @@ export default function App() {
         {...s.link}
       >https://github.com/rafrex/spa-github-pages</Interactive>
 
-      <nav style={s.breadcrumbs}>
-        <Breadcrumbs />
-      </nav>
+      //<nav style={s.breadcrumbs}>
+      //  <Breadcrumbs />
+      //</nav>
 
       <Switch>
         <Route exact path="/" component={Home} />
