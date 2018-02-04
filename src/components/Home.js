@@ -12,6 +12,20 @@ export default function Home() {
       href="https://github.com/rafrex/spa-github-pages#readme"
     >{text}</Interactive>
   );
+  //<div style={s.pageLinkContainer}>
+  //     <Interactive
+  //       as={Link}
+  //       {...s.link}
+  //       to="/example"
+  //     >Example page</Interactive>
+  //   </div>
+  //<div style={s.pageLinkContainer}>
+  //     <Interactive
+  //       as={Link}
+  //       {...s.link}
+  //       to="/example/two-deep?field1=foo&field2=bar#boom!"
+  //     >Example two deep with query and hash</Interactive>
+  //   </div>
 
   return (
     <div>
@@ -21,13 +35,6 @@ export default function Home() {
         website built with React and React&nbsp;Router using {' '}
         <Code>BrowserRouter</Code>.
       </p>
-      <div style={s.pageLinkContainer}>
-        <Interactive
-          as={Link}
-          {...s.link}
-          to="/example"
-        >Example page</Interactive>
-      </div>
       <div style={s.pageLinkContainer}>
         <Interactive
           as={Link}
@@ -56,14 +63,6 @@ export default function Home() {
           to="/example/two-deep?field1=boss_annotator"
         >boss_annotator</Interactive>
       </div>
-      <div style={s.pageLinkContainer}>
-        <Interactive
-          as={Link}
-          {...s.link}
-          to="/example/two-deep?field1=foo&field2=bar#boom!"
-        >Example two deep with query and hash</Interactive>
-      </div>
-
     </div>
   );
 }
