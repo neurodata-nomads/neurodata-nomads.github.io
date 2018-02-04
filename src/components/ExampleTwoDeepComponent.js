@@ -71,10 +71,12 @@ export default function ExampleTwoDeepComponent({ location }) {
   }
   return (
     <div>
+    <ul>
       <Interactive
         as="a"
         href={String(getLinkUrl()[0])+String(getLinkUrl()[1])}
       >{String(getLinkUrl()[0])+String(getLinkUrl()[1])}</Interactive>
+    </ul>
     </div>
   );
 }
