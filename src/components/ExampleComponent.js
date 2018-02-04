@@ -7,9 +7,7 @@ import s from '../styles/exampleComponent.style';
 
 const ExamplePageText = () => (
   <p style={s.p}>
-    This is an example page. Refresh the page or copy/paste the url to
-    test out the redirect functionality (this same page should load
-      after the redirect).
+    One of the repos:
   </p>
 );
 
@@ -34,7 +32,7 @@ export default function ExampleComponent() {
               <Interactive
                 as={Link}
                 {...s.link}
-                to="/example/two-deep?field1=foo&field2=bar#boom!"
+                to="/example/two-deep?field1=foo"
               >Example two deep with query and hash</Interactive>
             </div>
           </div>

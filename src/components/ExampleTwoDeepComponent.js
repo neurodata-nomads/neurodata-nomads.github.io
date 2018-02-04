@@ -53,26 +53,28 @@ export default function ExampleTwoDeepComponent({ location }) {
       .map(fvPair => fvPair.split('='))
       .map(pair => [pair[0], pair.slice(1).join('=')]);
   }
+        //  {
+        //    parseQueryString().map((pair, index) => (
+        //      <Li key={`${pair[0]}${pair[1]}${index}`}>{`${pair[0]}: ${pair[1]}`}</Li>
+        //    ))
+        //  }
+        //<div>{queryStringTitle()}</div>
+        //<div style={s.lineContainer}>
+        //  <div>{hashFragmentTitle()}</div>
+        //  <ul>
+        //    {hashPresent && <Li>{location.hash.slice(1)}</Li>}
+        //  </ul>
+        //</div>
 
+  function getLinkUrl(){
+    return ['http://www.github.com/neurodata-nomads/',parseQueryString().map((pair, index) => (`${pair[1]}`))]
+  }
   return (
     <div>
-      <div style={s.lineContainer}>
-        <div>{queryStringTitle()}</div>
-        <ul>
-          {
-            parseQueryString().map((pair, index) => (
-              <Li key={`${pair[0]}${pair[1]}${index}`}>{`${pair[0]}: ${pair[1]}`}</Li>
-            ))
-          }
-        </ul>
-      </div>
-      <div style={s.lineContainer}>
-        <div>{hashFragmentTitle()}</div>
-        <ul>
-          {hashPresent && <Li>{location.hash.slice(1)}</Li>}
-        </ul>
-      </div>
-      {linkToShowQueryAndOrHash()}
+      <Interactive
+        as="a"
+        href={String(getLinkUrl()[0])+String(getLinkUrl()[1])}
+      >{String(getLinkUrl()[0])+String(getLinkUrl()[1])}</Interactive>
     </div>
   );
 }

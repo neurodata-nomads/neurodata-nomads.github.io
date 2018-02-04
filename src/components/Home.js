@@ -16,16 +16,10 @@ export default function Home() {
   return (
     <div>
       <p style={s.p}>
-        This is an example single page app built
-        with React and React&nbsp;Router using {' '}
-        <Code>BrowserRouter</Code>. Navigate with the links below and
-        refresh the page or copy/paste the url to test out the redirect
-        functionality deployed to overcome GitHub&nbsp;Pages incompatibility
-        with single page apps (like this one).
-      </p>
-      <p style={s.p}>
-        Please see the {repoReadmeLink('repo readme')} for instructions on how to
-        use this boilerplate to deploy your own single page app using GitHub Pages.
+        This is a boilerplate for the NOMADS
+        (Neurodatai"s Opensource Method for Autonomous Detection of Synapses)
+        website built with React and React&nbsp;Router using {' '}
+        <Code>BrowserRouter</Code>.
       </p>
       <div style={s.pageLinkContainer}>
         <Interactive
@@ -38,9 +32,38 @@ export default function Home() {
         <Interactive
           as={Link}
           {...s.link}
+          to="/example/two-deep?field1=neurodataresource"
+        >neurodataresource</Interactive>
+      </div>
+      <div style={s.pageLinkContainer}>
+        <Interactive
+          as={Link}
+          {...s.link}
+          to="/example/two-deep?field1=pymeda"
+        >pymeda</Interactive>
+      </div>
+      <div style={s.pageLinkContainer}>
+        <Interactive
+          as={Link}
+          {...s.link}
+          to="/example/two-deep?field1=synaptomes"
+        >synaptomes</Interactive>
+      </div>
+      <div style={s.pageLinkContainer}>
+        <Interactive
+          as={Link}
+          {...s.link}
+          to="/example/two-deep?field1=boss_annotator"
+        >boss_annotator</Interactive>
+      </div>
+      <div style={s.pageLinkContainer}>
+        <Interactive
+          as={Link}
+          {...s.link}
           to="/example/two-deep?field1=foo&field2=bar#boom!"
         >Example two deep with query and hash</Interactive>
       </div>
+
     </div>
   );
 }

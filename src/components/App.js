@@ -10,17 +10,17 @@ import s from '../styles/app.style';
 export default function App() {
   return (
     <div style={s.root}>
-      <h1 style={s.title}>Single Page Apps for GitHub Pages</h1>
+      <h1 style={s.title}>Neurodata NOMADS Webpage</h1>
       <Interactive
         as="a"
-        href="https://github.com/rafrex/spa-github-pages"
+        href="https://github.com/neurodata-nomads"
         style={s.repoLink}
         {...s.link}
-      >https://github.com/rafrex/spa-github-pages</Interactive>
+      >https://github.com/neurodata-nomads</Interactive>
 
-      //<nav style={s.breadcrumbs}>
-      //  <Breadcrumbs />
-      //</nav>
+      <nav style={s.breadcrumbs}>
+        <Breadcrumbs />
+      </nav>
 
       <Switch>
         <Route exact path="/" component={Home} />
@@ -29,15 +29,15 @@ export default function App() {
       </Switch>
 
       <div style={s.creditLine}>
-        <Interactive
-          as="a"
-          href="http://www.rafaelpedicini.com"
-          interactiveChild
-          focus={{}}
-          touchActive={{}}
-          touchActiveTapOnly
-        >
-          Code and concept by <span {...s.childLink}>Rafael Pedicini</span>
+      <Interactive
+        as="a"
+        href="http://www.neurodata.io"
+        interactiveChild
+        focus={{}}
+        touchActive={{}}
+        touchActiveTapOnly
+      >
+          Branch of <span {...s.childLink}>neurodata.io</span>
         </Interactive>
       </div>
     </div>
