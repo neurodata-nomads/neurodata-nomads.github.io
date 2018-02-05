@@ -31,7 +31,7 @@ export default function Home() {
     <div>
       <p style={s.p}>
         This is a boilerplate for the NOMADS
-        (Neurodatai"s Opensource Method for Autonomous Detection of Synapses)
+        (Neurodata's Opensource Method for Autonomous Detection of Synapses)
         website built with React and React&nbsp;Router using {' '}
         <Code>BrowserRouter</Code>.
       </p>
