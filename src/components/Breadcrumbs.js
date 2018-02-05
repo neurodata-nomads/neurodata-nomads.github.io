@@ -6,8 +6,8 @@ import s from '../styles/style';
 
 const breadCrumbTitles = {
   '': 'Home',
-  example: 'Example',
-  'two-deep': 'Two Deep',
+  //example: 'Example',
+  //'two-deep': 'Two Deep',
 };
 
 function BreadcrumbsItem({ match }) {
@@ -20,7 +20,7 @@ function BreadcrumbsItem({ match }) {
         as={Link}
         {...s.link}
         to={to}
-      >{title || 'Page Not Found'}</Interactive>
+      >{title || ''}</Interactive>
       {!match.isExact && title && ' / '}
       {title &&
         <Route path={`${match.url === '/' ? '' : match.url}/:path`} component={BreadcrumbsItem} />
