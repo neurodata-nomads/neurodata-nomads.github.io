@@ -53,6 +53,7 @@ export default function ExampleTwoDeepComponent({ location }) {
       .map(fvPair => fvPair.split('='))
       .map(pair => [pair[0], pair.slice(1).join('=')]);
   }
+
         //  {
         //    parseQueryString().map((pair, index) => (
         //      <Li key={`${pair[0]}${pair[1]}${index}`}>{`${pair[0]}: ${pair[1]}`}</Li>
@@ -67,15 +68,15 @@ export default function ExampleTwoDeepComponent({ location }) {
         //</div>
 
   function getLinkUrl(){
-    return ['http://www.github.com/neurodata-nomads/',parseQueryString().map((pair, index) => (`${pair[1]}`))]
+    return ['http://www.github.com/',parseQueryString().map((pair, index) => (`${pair[1]}`))[0],'/', parseQueryString().map((pair, index) => (`${pair[1]}`))[1]]
   }
   return (
     <div>
       <Interactive
         as="a"
         {...s.link}
-        href={String(getLinkUrl()[0])+String(getLinkUrl()[1])}
-      >{String(getLinkUrl()[1])}</Interactive>
+        href={String(getLinkUrl()[0])+String(getLinkUrl()[1])+String(getLinkUrl()[2])+String(getLinkUrl()[3])}
+      >{String(getLinkUrl()[3])}</Interactive>
     </div>
   );
 }

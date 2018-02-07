@@ -39,29 +39,36 @@ export default function Home() {
         <Interactive
           as={Link}
           {...s.link}
-          to="/example/two-deep?field1=neurodataresource"
+          to="/example/two-deep?field1=neurodata-nomads&field2=neurodataresource"
         >neurodataresource</Interactive>
       </div>
       <div style={s.pageLinkContainer}>
         <Interactive
           as={Link}
           {...s.link}
-          to="/example/two-deep?field1=pymeda"
+          to="/example/two-deep?field1=neurodata-nomads&field2=pymeda"
         >pymeda</Interactive>
       </div>
       <div style={s.pageLinkContainer}>
         <Interactive
           as={Link}
           {...s.link}
-          to="/example/two-deep?field1=synaptomes"
+          to="/example/two-deep?field1=neurodata-nomads&field2=synaptomes"
         >synaptomes</Interactive>
       </div>
       <div style={s.pageLinkContainer}>
         <Interactive
           as={Link}
           {...s.link}
-          to="/example/two-deep?field1=boss_annotator"
+          to="/example/two-deep?field1=neurodata-nomads&field2=boss_annotator"
         >boss_annotator</Interactive>
+      </div>
+      <div style={s.pageLinkContainer}>
+        <Interactive
+          as={Link}
+          {...s.link}
+          to="/example/two-deep?field1=neurodata&field2=nomads_deploy"
+        >nomads_deploy</Interactive>
       </div>
     </div>
   );
