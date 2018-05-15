@@ -72,7 +72,7 @@ export default function ExampleTwoDeepComponent({ location }) {
   }
   return (
     <div>
-      <img src={"https://github.com/neurodata-nomads/neurodata-nomads.github.io/tree/master/src/"+String(getLinkUrl()[3])+".png"} alt="img" height="42" width="42"/>
+      <img src={"https://raw.githubusercontent.com/neurodata-nomads/neurodata-nomads.github.io/master/src/"+String(getLinkUrl()[3])+".png"} alt="img" height="120" width="120"/>
       <hr></hr>
       <Interactive
         as="a"

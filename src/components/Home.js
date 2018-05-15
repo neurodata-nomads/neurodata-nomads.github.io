@@ -34,7 +34,7 @@ export default function Home() {
         website, containing links to relevant repositories.
       </p>
       <hr></hr>
-      <img src="../nomads_classifier_img.png" alt="Smiley face" height="42" width="42"/>
+      <img src={"https://raw.githubusercontent.com/neurodata-nomads/neurodata-nomads.github.io/master/src/neurodataresource.png"} alt="img" height="50" width="50"/>
       <div style={s.pageLinkContainer}>
         <Interactive
           as={Link}
@@ -47,6 +47,7 @@ export default function Home() {
       </p>
       <hr></hr>
 
+      <img src={"https://raw.githubusercontent.com/neurodata-nomads/neurodata-nomads.github.io/master/src/pymeda.png"} alt="img" height="50" width="50"/>
       <div style={s.pageLinkContainer}>
         <Interactive
           as={Link}
@@ -58,6 +59,8 @@ export default function Home() {
         This is a tool which is able to output visualizations of synapse data.
       </p>
       <hr></hr>
+
+      <img src={"https://raw.githubusercontent.com/neurodata-nomads/neurodata-nomads.github.io/master/src/boss_annotator.png"} alt="img" height="50" width="50"/>
       <div style={s.pageLinkContainer}>
         <Interactive
           as={Link}
@@ -70,6 +73,7 @@ export default function Home() {
       </p>
       <hr></hr>
 
+      <img src={"https://raw.githubusercontent.com/neurodata-nomads/neurodata-nomads.github.io/master/src/nomads_deploy.png"} alt="img" height="50" width="50"/>
       <div style={s.pageLinkContainer}>
         <Interactive
           as={Link}
@@ -82,6 +86,7 @@ export default function Home() {
       </p>
       <hr></hr>
 
+      <img src={"https://raw.githubusercontent.com/neurodata-nomads/neurodata-nomads.github.io/master/src/nomads_classifier.png"} alt="img" height="50" width="50"/>
       <div style={s.pageLinkContainer}>
         <Interactive
           as={Link}
@@ -94,6 +99,7 @@ export default function Home() {
       </p>
       <hr></hr>
 
+      <img src={"https://raw.githubusercontent.com/neurodata-nomads/neurodata-nomads.github.io/master/src/nomads_cloud.png"} alt="img" height="50" width="50"/>
       <div style={s.pageLinkContainer}>
         <Interactive
           as={Link}
