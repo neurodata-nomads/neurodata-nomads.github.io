@@ -30,11 +30,11 @@ export default function Home() {
   return (
     <div>
       <p style={s.p}>
-        This is a boilerplate for the NOMADS
-        (Neurodata's Opensource Method for Autonomous Detection of Synapses)
-        website built with React and React&nbsp;Router using {' '}
-        <Code>BrowserRouter</Code>.
+        NOMADS (Neurodata Opensource Method for Autonomous Detection of Synapses)
+        website, containing links to relevant repositories.
       </p>
+      <hr></hr>
+      <img src="../nomads_classifier_img.png" alt="Smiley face" height="42" width="42"/>
       <div style={s.pageLinkContainer}>
         <Interactive
           as={Link}
@@ -42,6 +42,11 @@ export default function Home() {
           to="/example/two-deep?field1=neurodata-nomads&field2=neurodataresource"
         >neurodataresource</Interactive>
       </div>
+      <p style={s.p}>
+        This is a library which allows NOMADS to function with various neurodata tools
+      </p>
+      <hr></hr>
+
       <div style={s.pageLinkContainer}>
         <Interactive
           as={Link}
@@ -49,13 +54,10 @@ export default function Home() {
           to="/example/two-deep?field1=neurodata-nomads&field2=pymeda"
         >pymeda</Interactive>
       </div>
-      <div style={s.pageLinkContainer}>
-        <Interactive
-          as={Link}
-          {...s.link}
-          to="/example/two-deep?field1=neurodata-nomads&field2=synaptomes"
-        >synaptomes</Interactive>
-      </div>
+      <p style={s.p}>
+        This is a tool which is able to output visualizations of synapse data.
+      </p>
+      <hr></hr>
       <div style={s.pageLinkContainer}>
         <Interactive
           as={Link}
@@ -63,13 +65,45 @@ export default function Home() {
           to="/example/two-deep?field1=neurodata-nomads&field2=boss_annotator"
         >boss_annotator</Interactive>
       </div>
+      <p style={s.p}>
+        This tool is used to generate manual annotations for synapse data in the BOSS, a neurodata database.
+      </p>
+      <hr></hr>
+
       <div style={s.pageLinkContainer}>
         <Interactive
           as={Link}
           {...s.link}
-          to="/example/two-deep?field1=neurodata&field2=nomads_deploy"
+          to="/example/two-deep?field1=neurodata-nomads&field2=nomads_deploy"
         >nomads_deploy</Interactive>
       </div>
+      <p style={s.p}>
+        NOMADS pipeline which runs the unsupervised synapse detection algorithm.
+      </p>
+      <hr></hr>
+
+      <div style={s.pageLinkContainer}>
+        <Interactive
+          as={Link}
+          {...s.link}
+          to="/example/two-deep?field1=neurodata-nomads&field2=nomads_classifier"
+        >nomads_classifier</Interactive>
+      </div>
+      <p style={s.p}>
+        This tool classifies synapse data outputted from nomads_deploy
+      </p>
+      <hr></hr>
+
+      <div style={s.pageLinkContainer}>
+        <Interactive
+          as={Link}
+          {...s.link}
+          to="/example/two-deep?field1=neurodata-nomads&field2=nomads_cloud"
+        >nomads_cloud</Interactive>
+      </div>
+      <p style={s.p}>
+        This is the core cloud functionality which the NOMADS service runs on.
+      </p>
     </div>
   );
 }

@@ -7,7 +7,7 @@ import s from '../styles/exampleComponent.style';
 
 const ExamplePageText = () => (
   <p style={s.p}>
-    One of the repos:
+    Link to the github repository below:
   </p>
 );
 
