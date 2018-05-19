@@ -34,6 +34,21 @@ export default function Home() {
         website, containing links to relevant repositories.
       </p>
       <hr></hr>
+
+      <img src={"https://raw.githubusercontent.com/neurodata-nomads/neurodata-nomads.github.io/master/src/nomads_classifier_pipeline.png"} alt="img" height="50" width="50"/>
+      <div style={s.pageLinkContainer}>
+        <Interactive
+          as={Link}
+          {...s.link}
+          to="/example/two-deep?field1=neurodata-nomads&field2=nomads_classifier_pipeline"
+        >nomads_classifier_pipeline</Interactive>
+      </div>
+      <p style={s.p}>
+        A dockerized pipeline which allows researchers to run the nomads synapse detector, classifier, and pyMeda visualizations all together.
+      </p>
+      <hr></hr>
+
+
       <img src={"https://raw.githubusercontent.com/neurodata-nomads/neurodata-nomads.github.io/master/src/neurodataresource.png"} alt="img" height="50" width="50"/>
       <div style={s.pageLinkContainer}>
         <Interactive
